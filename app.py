@@ -4,7 +4,10 @@ import pickle
 from dateutil import parser
 
 app=Flask(__name__)
-@app.route("/",methods=["POST"])
+@app.route("/")
+def hello():
+    return "Welcome to Covid prediction API"
+@app.route("/predict",methods=["POST"])
 def predict():
     with open("CWY.pickle","rb") as f:
         model=pickle.load(f)
