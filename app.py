@@ -23,7 +23,7 @@ def predict():
         "cases":cases
     })
 
-    response.headers.add("Access-Control_Allow-Origin","*")
+    response.headers.add("Access-Control-Allow-Origin","*")
 
     return response
 if __name__=="__main__":
