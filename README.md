@@ -5,4 +5,5 @@ A RESTful API built over Python flask to predict the number of positive cases wh
 Heroku API: https://covid19mlapi.herokuapp.com/
 
 Method: POST on https://covid19mlapi.herokuapp.com/predict
-using form data with parameter 'date'
+using form data with parameter 'date'.
+Response: A JSON object with a predicted value of number of cases on the specified date as passed to the API
